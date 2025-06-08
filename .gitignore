@@ -1,0 +1,11 @@
+# Twilio credentials or secrets
+.twilio.cfg
+.twilio.env
+
+# General environment variables (for Twilio creds)
+.env
+.env.*
+
+# Twilio debug or log files (if any)
+twilio-debug.log
+twilio-error.log

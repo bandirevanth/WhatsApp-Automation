@@ -43,7 +43,7 @@ def main():
         delay_seconds = (schedule_datetime - now).total_seconds()
 
         if delay_seconds <= 0:
-            print("⚠️ The scheduled time is in the past. Please choose a future time.")
+            print("The scheduled time is in the past. Please choose a future time.")
             return
 
         print(f"\n🕒 Message scheduled to be sent to {name} at {schedule_datetime.strftime('%Y-%m-%d %H:%M:%S')}.\n")
@@ -52,7 +52,7 @@ def main():
         send_whatsapp_message(recipient_number, message_body)
 
     except ValueError:
-        print("❌ Invalid date/time format. Please use YYYY-MM-DD and HH:MM (24-hour).")
+        print("Invalid date/time format. Please use YYYY-MM-DD and HH:MM (24-hour).")
 
 if __name__ == "__main__":
     main()
